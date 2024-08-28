@@ -28,4 +28,9 @@ router.get('/sobre', (req,res)=>{
     res.sendFile(path.join(__dirname, '../public/html/sobre.html'));
 })
 
+//rota para a página Administrar
+router.get('/administrar', (req,res)=>{
+    res.sendFile(path.join(__dirname, '../public/html/administrar.html'));
+})
+
 module.exports = router;

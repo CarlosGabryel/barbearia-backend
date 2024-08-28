@@ -23,12 +23,9 @@ router.get('/servicos', (req,res)=>{
     res.sendFile(path.join(__dirname, '../public/html/servicos.html'));
 });
 
-//rota para a página de sobre
+//rota para a página sobre
 router.get('/sobre', (req,res)=>{
     res.sendFile(path.join(__dirname, '../public/html/sobre.html'));
 })
-
-//Rota para criar servico
-router.post('/criarservico', servicoControler.createServico);
 
 module.exports = router;

@@ -491,6 +491,10 @@ body {
   color: var(--color-yellow);
 }
 
+.contato .white {
+  color: var(--color-white);
+}
+
 .contato--form {
   display: flex;
   flex-direction: column;

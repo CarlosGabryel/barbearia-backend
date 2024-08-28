@@ -14,7 +14,7 @@ router.get('/contato', function(req, res) {
 
 //rota para a página de planos
 router.get('/planos', function(req, res){
-    res.sendFile(path.join(__dirname, '../public/html/index.html'));
+    res.sendFile(path.join(__dirname, '../public/html/planos.html'));
 });
 
 //rota para a página de serviços
@@ -22,9 +22,14 @@ router.get('/servicos', (req,res)=>{
     res.sendFile(path.join(__dirname, '../public/html/servicos.html'));
 });
 
-//rota para a página de sobre
+//rota para a página sobre
 router.get('/sobre', (req,res)=>{
     res.sendFile(path.join(__dirname, '../public/html/sobre.html'));
+})
+
+//rota para a página administrar
+router.get('/administrar', (req,res)=>{
+    res.sendFile(path.join(__dirname, '../public/html/administrar.html'));
 })
 
 module.exports = router;

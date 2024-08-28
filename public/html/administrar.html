@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="por">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,11 +22,11 @@
         <div class="nav--responsivo">
           <ul class="nav--menu">
             <li><a href="/">HOME</a></li>
-            <li><a class="nav--link-active" href="/sobre">SOBRE</a></li>
+            <li><a href="/sobre">SOBRE</a></li>
             <li><a href="/servicos">SERVIÇOS</a></li>
             <li><a href="/planos">PLANOS</a></li>
             <li><a href="/contato">CONTATO</a></li>
-            <li><a href="/administrar">ADMINISTRAR</a></li>
+            <li><a class="nav--link-active" href="/administrar">ADMINISTRAR</a></li>
           </ul>
           <ul class="nav--icons">
             <li>
@@ -101,48 +101,30 @@
         </button>
       </nav>
     </header>
+
     <main>
-      <section class="sobre">
-        <div class="hero--text">
-          <h1 class="titulo">Conheça Nossa História</h1>
-          <h3 class="subtitulo">
-            Na Classic Barbearia, somos uma parte essencial da comunidade, além
-            de sermos uma barbearia.
-          </h3>
-          <p class="line-height">
-            Na Classic Barbearia, somos mais do que apenas uma barbearia local -
-            somos uma tradição enraizada na comunidade, trazendo qualidade e
-            estilo para cada corte. Fundada com paixão e habilidade, nossa
-            barbearia é o coração pulsante do bairro, onde os clientes se tornam
-            amigos e cada visita é uma experiência memorável. Nossos barbeiros
-            experientes são mestres em seu ofício, combinando técnica clássica
-            com um toque contemporâneo para criar looks que refletem a
-            individualidade de cada cliente. Aqui na Classic Barbearia, não se
-            trata apenas de aparência - é sobre cultivar uma conexão duradoura
-            com nossos clientes e manter viva a tradição da barbearia. Venha nos
-            visitar e faça parte da nossa história.
-          </p>
+      <section class="main--section">
+        <div class="main--top-text">
+          <h1 class="titulo">Administrar Serviços</h1>
         </div>
-        <div class="sobre--pontos-container">
-          <div class="sobre--pontos">
-            <div class="sobre--item">
-              <img src="../img/qualidade.svg" alt="Compromisso 
-              com a Qualidade">
-              <p>Compromisso 
-                com a Qualidade</p>
-            </div>
-            <div class="sobre--item">
-              <img src="../img/equipe.svg" alt="Equipe Talentosa">
-              <p>Equipe Talentosa</p>
-            </div>
-            <div class="sobre--item">
-              <img src="../img/ambiente.svg" alt="Ambiente Acolhedor">
-              <p>Ambiente Acolhedor</p>
-            </div>
-            <div class="sobre--item">
-              <img src="../img/tradicao.svg" alt="Tradição e Inovação">
-              <p>Tradição e Inovação</p>
-            </div>
+        <div class="contato">
+          <div class="contato--form">
+            <h3 class="white">CADASTRAR NOVO SERVIÇO</h3>
+            <form class="contato--form" action="">
+              <div class="contato--text-field">
+                <label for="nome">Nome do serviço:</label>
+                <input class="input" type="text" name="nome" id="nome" placeholder="Digite o nome do serviço">
+              </div>
+              <div class="contato--text-field">
+                <label for="imagem">Imagem do serviço:</label>
+                <input class="input" type="text" name="imagem" id="imagem" placeholder="Digite a URL da imagem">
+              </div>
+              <div class="contato--text-field">
+                <label for="descricao">Descrição:</label>
+                <textarea class="input" name="descricao" id="descricao" cols="30" rows="4" placeholder="Digite a descricao do serviço"></textarea>
+              </div>
+              <button type="button" class="button">CADASTRAR</button>
+            </form>
           </div>
         </div>
       </section>
@@ -164,7 +146,6 @@
             <li><a href="/servicos">Serviços</a></li>
             <li><a href="/planos">Planos</a></li>
             <li><a href="/contato">Contato</a></li>
-            <li><a href="/administrar">ADMINISTRAR</a></li>
           </ul>
         </div>
         <div class="footer--atendimento">
@@ -257,6 +238,6 @@
       </div>
     </footer>
 
-    <script src="../js/main.js" type="text/javascript"></script>
+    <script src="/js/main.js" type="text/javascript"></script>
   </body>
 </html>

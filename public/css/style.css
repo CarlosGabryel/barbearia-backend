@@ -409,6 +409,11 @@ body {
   font-size: var(--size-normal);
 }
 
+.servicos--image {
+  border: 3px solid var(--color-yellow);
+  border-radius: 10px 10px 0 0;
+}
+
 .planos{
   display: flex;
   padding: 25px 100px;

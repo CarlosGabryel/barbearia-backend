@@ -21,6 +21,11 @@ exports.createServico = async (req, res) => {
 
 //Mostrar todos os serviços
 exports.mostrarServicos = async (req, res) => {
-    let dataServicos = await servico.find().lean();
-    await dataServicos.forEach()
+  try {
+    const dataServicos = await servico.find().lean();
+    res.status(200).json(dataServicos);
+  } catch (error) {
+    res.status(500).json({ message: "Erro ao buscar serviços", error });
+    console.error(error);
+  }
 }

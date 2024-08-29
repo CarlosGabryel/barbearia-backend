@@ -36,4 +36,7 @@ router.get("/administrar", (req, res) => {
 //Rota para criaçãodo serviço
 router.post("/criarservico", servicoControler.createServico);
 
+// Rota para mostrar os serviços
+router.get('/servico', servicoControler.mostrarServicos);
+
 module.exports = router;

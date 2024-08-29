@@ -110,7 +110,7 @@
         <div class="contato">
           <div class="contato--form">
             <h3 class="white">CADASTRAR NOVO SERVIÇO</h3>
-            <form class="contato--form" action="">
+            <form class="contato--form" id="servicoForm" method="post" action="/criarservico">
               <div class="contato--text-field">
                 <label for="nome">Nome do serviço:</label>
                 <input class="input" type="text" name="nome" id="nome" placeholder="Digite o nome do serviço">
@@ -123,7 +123,7 @@
                 <label for="descricao">Descrição:</label>
                 <textarea class="input" name="descricao" id="descricao" cols="30" rows="4" placeholder="Digite a descricao do serviço"></textarea>
               </div>
-              <button type="button" class="button">CADASTRAR</button>
+              <button type="submit" class="button">CADASTRAR</button>
             </form>
           </div>
         </div>
@@ -238,7 +238,6 @@
         <p>Copyright @ Classic Barbearia</p>
       </div>
     </footer>
-
     <script src="/js/main.js" type="text/javascript"></script>
   </body>
 </html>

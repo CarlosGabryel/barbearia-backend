@@ -27,3 +27,17 @@ window.addEventListener('resize', () => {
     img.setAttribute("src", "/img/menu.png");
   }
 });
+
+window.onload = function() {
+  fetch("/checkAuth")
+    .then(response => response.json())
+    .then(data => {
+      if (data.isAuthenticated) {
+        document.getElementById("loginLink").style.display = "none";
+        document.getElementById("adminLink").style.display = "block";
+      } else {
+        document.getElementById("loginLink").style.display = "block";
+        document.getElementById("adminLink").style.display = "none";
+      }
+    });
+};

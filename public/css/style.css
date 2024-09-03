@@ -84,6 +84,11 @@ body {
   line-height: 1.5rem;
 }
 
+.button-new {
+  color: var(--color-dark-red);
+  background-color: var(--color-grey);
+}
+
 .main--section{
   display: flex;
   flex-direction: column;

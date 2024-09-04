@@ -1,5 +1,3 @@
-//Levando os dados para o BD
-
 document
   .getElementById("servicoForm")
   .addEventListener("submit", async function (event) {
@@ -28,18 +26,3 @@ document
       alert("Erro ao criar serviço.");
     }
   });
-
-  
-  window.onload = function() {
-    fetch("/checkAuth")
-      .then(response => response.json())
-      .then(data => {
-        if (data.isAuthenticated) {
-          document.getElementById("loginLink").style.display = "none";
-          document.getElementById("adminLink").style.display = "block";
-        } else {
-          document.getElementById("loginLink").style.display = "block";
-          document.getElementById("adminLink").style.display = "none";
-        }
-      });
-  };

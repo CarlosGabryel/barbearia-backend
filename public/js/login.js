@@ -1,6 +1,4 @@
-
   // DADOS DO USUARIO PARA LOGIN
-  
   document
   .getElementById("loginForm")
   .addEventListener("submit", async function (event) {
@@ -20,10 +18,9 @@
     });
 
     const result = await response.json();
-    console.log(result);
     if (response.ok) {
       alert("Autenticado com sucesso");
-      window.location.href('/')
+      window.location.href = '/';
     } else {
       alert(result.message || "Erro ao autenticar.");
     }
